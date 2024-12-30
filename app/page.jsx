@@ -1,7 +1,12 @@
 import AuthForm from "./components/AuthForm";
 
 export default function Home() {
+
+    // Debugging: Memastikan variabel environment tersedia
+  console.log("Supabase URL:", process.env.NEXT_PUBLIC_SUPABASE_URL);
+  console.log("Supabase Key:", process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY);
   return (
+
     <div className="min-h-screen bg-gray-900 text-gray-300">
       <div className="container mx-auto p-6 sm:p-12">
         {/* Header Section */}
